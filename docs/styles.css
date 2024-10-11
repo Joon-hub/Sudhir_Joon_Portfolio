@@ -73,6 +73,11 @@ section {
     margin-bottom: 40px;
 }
 
+/* About Section */
+#about p {
+    text-align: justify;
+}
+
 /* Skills Section */
 .skills-container {
     display: grid;
@@ -93,6 +98,7 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Education Section */
@@ -134,7 +140,7 @@ footer {
     }
 }
 
-/* Animation */
+/* Fade-in Animation */
 .fade-in {
     animation: fadeIn 1s ease-in;
 }
