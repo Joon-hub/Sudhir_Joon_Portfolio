@@ -1,129 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudhir Joon</title>
-    <link rel="stylesheet" href="./docs/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Sudhir Joon</h1>
-        <h4><a href="https://www.itsligo.ie/courses/msc-in-computing-data-science-online/"> MSc Data Science ATU Sligo</a></h4>
-    </header>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#hobbies">Hobbies & Interests</a></li>
-            <li><a href="#references">References</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+h1, h2, h3, h4 {
+    color: #2c3e50;
+}
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate data science student with a keen interest in machine learning, statistical analysis, and data visualization. I am constantly learning and applying new techniques to solve real-world problems.</p>
-        </section>
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-        <section id="skills" class="fade-in">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <h3>Data Science</h3>
-                    <p>Python, R, SQL</p>
-                </div>
-                <div class="skill">
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                </div>
-                <div class="skill">
-                    <h3>Machine Learning</h3>
-                    <p>Scikit-Learn, TensorFlow</p>
-                </div>
-                <div class="skill">
-                    <h3>Data Visualization</h3>
-                    <p>Matplotlib, Seaborn, Tableau</p>
-                </div>
-            </div>
-        </section>
+a:hover {
+    color: #2980b9;
+}
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Customer Churn Prediction</h3>
-                <p>Developed a machine learning model to predict customer churn for a telecom company, achieving 85% accuracy.</p>
-            </article>
-            <article>
-                <h3>COVID-19 Data Analysis</h3>
-                <p>Analyzed and visualized COVID-19 data to identify trends and patterns across different countries.</p>
-            </article>
-            <article>
-                <h3>Stock Price Prediction</h3>
-                <p>Built a time series forecasting model to predict stock prices using historical data and sentiment analysis.</p>
-            </article>
-        </section>
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>MSc Biotechnology</h3>
-                    <p>University of Applied Sciences, 2016</p>
-                </li>
-                <li>
-                    <h3>Online Courses</h3>
-                    <ul>
-                        <li>Machine Learning Specialization - Coursera</li>
-                        <li>Data Science Professional Certificate - edX</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Certified Data Scientist – DataCamp</li>
-                <li>Advanced SQL for Data Science – LinkedIn Learning</li>
-                <li>Big Data Engineering – Pluralsight</li>
-            </ul>
-        </section>
+header h4 a {
+    color: #3498db;
+}
 
-        <section id="hobbies">
-            <h2>Hobbies & Interests</h2>
-            <p>In my free time, I enjoy exploring new advancements in AI and deep learning. I am also an avid runner, preparing for 10k marathons, and I enjoy reading about nutrition and fitness. Additionally, I am learning basic dance steps to improve my physical coordination.</p>
-        </section>
+/* Navigation Styles */
+nav {
+    background-color: #34495e;
+    padding: 10px 0;
+}
 
-        <section id="references">
-            <h2>References</h2>
-            <p>Available upon request. Please feel free to reach out for contact details.</p>
-        </section>
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+nav ul li {
+    margin: 0 15px;
+}
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+nav ul li a {
+    color: #ecf0f1;
+    font-weight: bold;
+}
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+/* Main Content Styles */
+main {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
+section {
+    margin-bottom: 40px;
+}
 
-    <footer>
-        <p>&copy; 2024 Sudhir Joon. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Projects Section */
+#projects article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Education Section */
+#education ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#education ul ul {
+    padding-left: 20px;
+}
+
+/* Contact Section */
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
