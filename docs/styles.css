@@ -1,4 +1,13 @@
 /* General Styles */
+header h1 {
+    font-size: 3em;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
